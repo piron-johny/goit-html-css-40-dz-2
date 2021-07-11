@@ -1,0 +1,150 @@
+:root {
+  --primariColor: #757575;
+  --secondaryColor: #2196F3;
+}
+.list {
+  list-style: none;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--primariColor);
+}
+a {
+  text-decoration: none;
+}
+/* Шапка сайта */
+.header {
+  display: flex;
+}
+.header__nav {
+}
+
+/* НАвигация */
+.nav {
+  display: flex;
+}
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+  margin-right: 93px;
+}
+.logo span {
+  color: var(--secondaryColor);
+}
+.nav__links {
+  display: flex;
+}
+.nav__link {
+}
+.nav__link-active {
+  color: var(--secondaryColor);
+}
+.header__contacts {
+  display: flex;
+}
+.contacts {
+}
+.contacts__item {
+}
+.content {
+}
+
+/* Первая секция */
+.section-one {
+}
+.section-one__tittle {
+}
+.section-one__btn {
+}
+.btn {
+}
+
+/* Вторая секция */
+.section-twoo {
+}
+.section-twoo__tittle {
+}
+.section-twoo__items {
+}
+.section-twoo__item {
+}
+.section-twoo__subtittle {
+}
+.section-twoo__text {
+}
+
+/* Третья секция */
+.section-thee {
+}
+.section-thee__tittle {
+}
+.section-thee__list {
+}
+.section-thee__item {
+}
+.section-thee__img {
+}
+
+/* Четвертая секция */
+.section-four {
+}
+.section-four__tittle {
+}
+.section-four__list {
+}
+.section-four__item {
+}
+.section-four__img {
+}
+.section-four__subtittle {
+}
+.section-four__text {
+}
+
+/* Подвал сайта */
+.footer {
+}
+.addrress {
+}
+.addrress__location {
+}
+
+
+
+/* Портфолио */
+.content {
+}
+.section-portfolio {
+}
+.tittle {
+}
+.filter-list {
+}
+.list {
+}
+.filter-list__item {
+}
+.filter-list__btn {
+}
+.filter-list__btn-active {
+}
+.btn {
+}
+.content-list {
+}
+.content-list__img {
+}
+.content-list__tittle {
+}
+.content-list__text {
+}
