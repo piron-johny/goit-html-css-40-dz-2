@@ -1,6 +1,7 @@
 :root {
-  --primariColor: #757575;
-  --secondaryColor: #2196F3;
+  --primaryColor: #212121;
+  --secondaryColor: #757575;
+  --activeColor: #2196F3;
 }
 .list {
   list-style: none;
@@ -9,45 +10,125 @@
   width: 1170px;
   margin: 0 auto;
 }
-
 body {
+  color: var(--primaryColor);
+
   font-family: Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: var(--primariColor);
+  letter-spacing: 0.03em;
 }
 a {
   text-decoration: none;
+  color: var(--primaryColor);
 }
+button {
+  border: none;
+  padding: 0;
+}
+.btn {
+  color: #ffffff;
+  background-color: var(--activeColor);
+
+  font-size: 16px;
+  line-height: 1.87;
+
+  border-radius: 4px;
+}
+.title__section {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
 /* Шапка сайта */
-.header {
-  display: flex;
+.header, .contacts__item {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 
-/* НАвигация */
-.nav {
-  display: flex;
-}
+/* Навигация */
 .logo {
+  color: #000000;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: #000000;
+
   margin-right: 93px;
 }
 .logo span {
-  color: var(--secondaryColor);
+  color: var(--activeColor);
 }
-.nav__links {
-  display: flex;
+.nav__link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-
+.nav__link:hover,
+.nav__link:focus,
 .nav__link-active {
-  color: var(--secondaryColor);
-}
-.header__contacts {
-  display: flex;
+  color: var(--activeColor);
 }
 
+/* Контакты */
+.contacts__item {
+  color: var(--secondaryColor);
+}
+.contacts__item:hover,
+.contacts__item:focus {
+  color: var(--activeColor);
+}
+
+/* Порвая секция */
+.section-one {
+  background-color: #2F303A;
+  text-align: center;
+}
+.section-one__title {
+  color: #ffffff;
+
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Вторая секция */
+.section-twoo__subtitle {
+  color: var(--primaryColor);
+
+  font-weight: 700;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+}
+.section-twoo__text {
+  color: var(--secondaryColor);
+
+  line-height: 1.7;
+}
+
+/* Третья секция */
+
+
+/* Четвертая секция */
+.section-four__item {
+  text-align: center;
+}
+.section-four__subtitle {
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 500;
+}
+
+/* Подвал */
+.address .contacts__item {
+  color: rgba(255, 255, 255, 0.6);
+}
