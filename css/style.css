@@ -5,6 +5,7 @@
 }
 .list {
   list-style: none;
+  padding: 0;
 }
 .container {
   width: 1170px;
@@ -28,12 +29,17 @@ button {
 }
 .btn {
   color: #ffffff;
-  background-color: var(--activeColor);
+  background-color: #F5F4FA;
 
   font-size: 16px;
-  line-height: 1.87;
 
   border-radius: 4px;
+
+  cursor: pointer;
+}
+.btn-active {
+  color: #ffffff;
+  background-color: var(--activeColor);
 }
 .title__section {
   font-size: 36px;
@@ -44,7 +50,8 @@ button {
 
 
 /* Шапка сайта */
-.header, .contacts__item {
+.header,
+ .contacts__item {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -72,7 +79,8 @@ button {
 }
 .nav__link:hover,
 .nav__link:focus,
-.nav__link-active {
+.nav__link-active,
+.address__location:hover {
   color: var(--activeColor);
 }
 
@@ -80,17 +88,20 @@ button {
 .contacts__item {
   color: var(--secondaryColor);
 }
-.contacts__item:hover,
-.contacts__item:focus {
+.contacts .contacts__item:hover,
+.contacts .contacts__item:focus {
   color: var(--activeColor);
 }
 
+
+/* --- Студия --- */
+
 /* Порвая секция */
-.section-one {
+.first-screen {
   background-color: #2F303A;
   text-align: center;
 }
-.section-one__title {
+.first-screen__title {
   color: #ffffff;
 
   font-size: 44px;
@@ -99,9 +110,13 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.first-screen__btn {
+  line-height: 1.87;
+  font-weight: 700;
+}
 
 /* Вторая секция */
-.section-twoo__subtitle {
+.advantages__subtitle {
   color: var(--primaryColor);
 
   font-weight: 700;
@@ -109,7 +124,7 @@ button {
 
   text-transform: uppercase;
 }
-.section-twoo__text {
+.advantages__text {
   color: var(--secondaryColor);
 
   line-height: 1.7;
@@ -119,16 +134,71 @@ button {
 
 
 /* Четвертая секция */
-.section-four__item {
+.team__item {
   text-align: center;
 }
-.section-four__subtitle {
+.team__subtitle {
   font-size: 16px;
   line-height: 1.19;
   font-weight: 500;
 }
 
+/* --- Портфолио --- */
+.filter-list__btn {
+  color: var(--primaryColor);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+/* 
+  padding: 6px 22px;
+  margin-right: 8px; */
+}
+.filter-list__btn:hover {
+  background-color: var(--activeColor);
+  color: #ffffff;
+}
+.filter-list__btn.btn-active {
+  color: #ffffff;
+}
+
+.content-list__tittle {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.content-list__text {
+  color: var(--secondaryColor);
+
+  font-size: 16px;
+  line-height: 1.86;
+}
+/* .filter-list {
+  display: flex;
+  justify-content: center;
+} */
+/* .content-lists {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+
 /* Подвал */
+.footer {
+  background-color: #2F303A;
+}
+.footer .logo {
+  color: #ffffff;
+}
+.address {
+  font-style: normal;
+}
+.address__location {
+  color: #ffffff;
+}
 .address .contacts__item {
   color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 400;
 }
