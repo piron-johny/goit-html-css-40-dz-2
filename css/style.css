@@ -1,7 +1,12 @@
+/* *{
+  box-sizing: border-box;
+} */
 :root {
   --primaryColor: #212121;
   --secondaryColor: #757575;
   --activeColor: #2196F3;
+  --sectionBg:#2F303A;
+  --btnBg:#F5F4FA;
 }
 .list {
   list-style: none;
@@ -14,26 +19,25 @@
 body {
   color: var(--primaryColor);
 
-  font-family: Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-a {
+.link {
   text-decoration: none;
   color: var(--primaryColor);
 }
-button {
-  border: none;
-  padding: 0;
-}
 .btn {
   color: #ffffff;
-  background-color: #F5F4FA;
+  background-color: var(--btnBg);
 
   font-size: 16px;
 
   border-radius: 4px;
+  border: none;
+
+  padding: 0;
 
   cursor: pointer;
 }
@@ -80,7 +84,9 @@ button {
 .nav__link:hover,
 .nav__link:focus,
 .nav__link-active,
-.address__location:hover {
+.address__location:hover,
+.contacts .contacts__item:hover,
+.contacts .contacts__item:focus {
   color: var(--activeColor);
 }
 
@@ -88,17 +94,13 @@ button {
 .contacts__item {
   color: var(--secondaryColor);
 }
-.contacts .contacts__item:hover,
-.contacts .contacts__item:focus {
-  color: var(--activeColor);
-}
 
 
 /* --- Студия --- */
 
 /* Порвая секция */
 .first-screen {
-  background-color: #2F303A;
+  background-color: var(--sectionBg);
   text-align: center;
 }
 .first-screen__title {
@@ -134,6 +136,10 @@ button {
 
 
 /* Четвертая секция */
+.team{
+  background-color: var(--btnBg);
+  display: flex;
+}
 .team__item {
   text-align: center;
 }
@@ -141,6 +147,11 @@ button {
   font-size: 16px;
   line-height: 1.19;
   font-weight: 500;
+}
+.team__text {
+  color: var(--secondaryColor);
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 /* --- Портфолио --- */
@@ -186,7 +197,7 @@ button {
 
 /* Подвал */
 .footer {
-  background-color: #2F303A;
+  background-color: var(--sectionBg);
 }
 .footer .logo {
   color: #ffffff;
