@@ -1,12 +1,10 @@
-/* *{
-  box-sizing: border-box;
-} */
 :root {
   --primaryColor: #212121;
   --secondaryColor: #757575;
   --activeColor: #2196F3;
   --sectionBg:#2F303A;
   --btnBg:#F5F4FA;
+  --colorText:#ffffff;
 }
 .list {
   list-style: none;
@@ -29,7 +27,7 @@ body {
   color: var(--primaryColor);
 }
 .btn {
-  color: #ffffff;
+  color: var(--colorText);
   background-color: var(--btnBg);
 
   font-size: 16px;
@@ -42,7 +40,7 @@ body {
   cursor: pointer;
 }
 .btn-active {
-  color: #ffffff;
+  color: var(--colorText);
   background-color: var(--activeColor);
 }
 .title__section {
@@ -55,7 +53,7 @@ body {
 
 /* Шапка сайта */
 .header,
- .contacts__item {
+.contacts__item {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -96,7 +94,7 @@ body {
 }
 
 
-/* --- Студия --- */
+                   /* --- Студия --- */
 
 /* Порвая секция */
 .first-screen {
@@ -104,7 +102,7 @@ body {
   text-align: center;
 }
 .first-screen__title {
-  color: #ffffff;
+  color: var(--colorText);
 
   font-size: 44px;
   font-weight: 900;
@@ -154,7 +152,7 @@ body {
   line-height: 1.2;
 }
 
-/* --- Портфолио --- */
+               /* --- Портфолио --- */
 .filter-list__btn {
   color: var(--primaryColor);
 
@@ -168,10 +166,10 @@ body {
 }
 .filter-list__btn:hover {
   background-color: var(--activeColor);
-  color: #ffffff;
+  color: var(--colorText);
 }
 .filter-list__btn.btn-active {
-  color: #ffffff;
+  color: var(--colorText);
 }
 
 .content-list__tittle {
@@ -200,13 +198,13 @@ body {
   background-color: var(--sectionBg);
 }
 .footer .logo {
-  color: #ffffff;
+  color: var(--colorText);
 }
 .address {
   font-style: normal;
 }
 .address__location {
-  color: #ffffff;
+  color: var(--colorText);
 }
 .address .contacts__item {
   color: rgba(255, 255, 255, 0.6);
